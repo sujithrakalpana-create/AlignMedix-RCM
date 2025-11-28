@@ -804,3 +804,53 @@ body {
   border-radius: 50%;
   object-fit: cover;
 }
+/* === SPLIT HERO (IMAGE LEFT, TEXT RIGHT) FOR INNER PAGES === */
+
+.page-hero.hero-split {
+  padding: 48px 0;
+  background: #f8fafc; /* light, clean */
+}
+
+.hero-split-inner {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+/* Left side image */
+.hero-split-image {
+  flex: 1;
+}
+
+.hero-split-image img {
+  width: 100%;
+  display: block;
+  border-radius: 18px; /* soft rounded */
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.12);
+}
+
+/* Right side text */
+.hero-split-text {
+  flex: 1;
+}
+
+/* Make sure hero text still looks like your current page-hero */
+.hero-split-text .breadcrumbs {
+  margin-bottom: 8px;
+}
+
+.hero-split-text .page-hero-title {
+  margin-bottom: 10px;
+}
+
+/* Mobile: stack image on top, text below */
+@media (max-width: 768px) {
+  .hero-split-inner {
+    flex-direction: column;
+  }
+
+  .hero-split-image,
+  .hero-split-text {
+    width: 100%;
+  }
+}
