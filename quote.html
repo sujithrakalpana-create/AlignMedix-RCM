@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Request a Quote | AlignMedix RCM</title>
+  <link rel="stylesheet" href="style-v2.css" />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <div class="logo">AlignMedix RCM</div>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="quote.html" class="nav-link active">Get a Quote</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container page-hero-inner">
+      <div class="breadcrumbs">
+        <a href="index.html">Home</a> · Get a Quote
+      </div>
+      <h1 class="page-hero-title">Request a Custom RCM Quote</h1>
+      <p class="page-hero-subtitle">
+        Pricing is tailored based on specialty, claim volume, payer mix, and scope of work.
+        Share a few details and we’ll get back with a personalized proposal.
+      </p>
+    </div>
+  </section>
+<!-- QUOTE PAGE IMAGE -->
+<img src="quote.jpg" class="section-image" alt="Quote Banner">
+
+  <!-- FORM -->
+  <section class="form-section">
+    <div class="container">
+      <div class="form-card">
+        <!-- Netlify form -->
+        <form name="quote" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="quote" />
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="name">Full Name</label>
+              <input class="form-input" id="name" name="Name" type="text" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email">Work Email</label>
+              <input class="form-input" id="email" name="Email" type="email" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="practice">Practice / Clinic Name</label>
+              <input class="form-input" id="practice" name="Practice" type="text" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="specialty">Specialty</label>
+              <input class="form-input" id="specialty" name="Specialty" type="text" placeholder="e.g., Family Medicine, Cardiology" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="volume">Approx. Monthly Claim Volume</label>
+              <select class="form-select" id="volume" name="Claim Volume">
+                <option value="">Select</option>
+                <option>&lt; 300 claims / month</option>
+                <option>300–800 claims / month</option>
+                <option>800–1500 claims / month</option>
+                <option>&gt; 1500 claims / month</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="servicesNeeded">Services Needed</label>
+              <select class="form-select" id="servicesNeeded" name="Services Needed">
+                <option value="">Select</option>
+                <option>End-to-End RCM</option>
+                <option>Denials &amp; AR Only</option>
+                <option>Eligibility &amp; Front Desk Support</option>
+                <option>Credentialing</option>
+                <option>Virtual Assistance</option>
+                <option>Custom Mix (describe below)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="painPoints">Current Challenges</label>
+            <textarea
+              class="form-textarea"
+              id="painPoints"
+              name="Current Challenges"
+              placeholder="Example: high denials, slow reimbursements, no time for AR follow-up, credentialing delays, etc."
+            ></textarea>
+            <div class="form-helper">
+              Share anything that will help us understand your situation better.
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="contactPref">Preferred Contact Method</label>
+            <input
+              class="form-input"
+              id="contactPref"
+              name="Preferred Contact"
+              type="text"
+              placeholder="e.g., Email only, WhatsApp, Call between 9am–5pm EST"
+            />
+          </div>
+
+          <div style="margin-top:18px; display:flex; gap:10px; flex-wrap:wrap;">
+            <button type="submit" class="btn-primary">Submit Request</button>
+            <a href="https://wa.me/918296826653" class="btn-secondary">WhatsApp Us Instead</a>
+          </div>
+
+          <p class="form-helper" style="margin-top:10px;">
+            By submitting this form, you agree to be contacted about RCM services. We respect your privacy and do not share your details.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© 2025 AlignMedix RCM. All rights reserved.</span>
+      <span>
+        <a href="privacy.html">Privacy</a> ·
+        <a href="terms.html">Terms</a>
+      </span>
+    </div>
+  </footer>
+</body>
+</html>

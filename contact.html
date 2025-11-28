@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | AlignMedix RCM</title>
+  <link rel="stylesheet" href="style-v2.css" />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <div class="logo">AlignMedix RCM</div>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="quote.html" class="nav-link">Get a Quote</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container page-hero-inner">
+      <div class="breadcrumbs">
+        <a href="index.html">Home</a> · Contact
+      </div>
+      <h1 class="page-hero-title">Let’s Talk</h1>
+      <p class="page-hero-subtitle">
+        Whether you’re exploring RCM support for the first time or looking to change vendors,
+        we’re here to listen and help.
+      </p>
+    </div>
+  </section>
+<!-- CONTACT PAGE IMAGE -->
+<img src="contact.jpg" class="section-image" alt="Contact AlignMedix RCM">
+
+  <!-- CONTACT SECTION -->
+  <section class="section-contact">
+    <div class="container">
+      <h2 class="section-title">Contact AlignMedix RCM</h2>
+      <p class="section-subtitle">
+        Reach out via email, WhatsApp, or send a quick message using the form below. We typically respond within 24 hours.
+      </p>
+
+      <div class="contact-card">
+        <div class="contact-column">
+          <div class="contact-label">Email</div>
+          <a href="mailto:hello@alignmedixrcm.com" class="contact-link">
+            hello@alignmedixrcm.com
+          </a>
+        </div>
+        <div class="contact-column">
+          <div class="contact-label">WhatsApp</div>
+          <a href="https://wa.me/918296826653" class="contact-link">
+            +91 82968 26653
+          </a>
+        </div>
+        <div class="contact-column">
+          <div class="contact-label">Best Time to Reach</div>
+          <div style="font-size:14px; color:#111827; font-weight:500;">
+            U.S. EST-friendly hours with flexible scheduling.
+          </div>
+        </div>
+      </div>
+
+      <!-- Simple contact form (Netlify) -->
+      <div class="form-card" style="margin-top:28px;">
+        <form name="contact" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="contact" />
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="cname">Full Name</label>
+              <input class="form-input" id="cname" name="Name" type="text" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="cemail">Email</label>
+              <input class="form-input" id="cemail" name="Email" type="email" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="cmessage">How can we help?</label>
+            <textarea
+              class="form-textarea"
+              id="cmessage"
+              name="Message"
+              placeholder="Briefly describe your needs, current billing setup, or questions."
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn-secondary">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© 2025 AlignMedix RCM. All rights reserved.</span>
+      <span>
+        <a href="privacy.html">Privacy</a> ·
+        <a href="terms.html">Terms</a>
+      </span>
+    </div>
+  </footer>
+</body>
+</html>
