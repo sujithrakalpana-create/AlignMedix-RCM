@@ -944,3 +944,53 @@ body {
         text-align: left;
     }
 }
+/* ABOUT HERO - SAME STYLE AS HOME */
+.about-hero {
+    background: url('about-new.jpg') no-repeat center center/cover;
+    padding: 120px 0;
+    color: #fff;
+    position: relative;
+    border-radius: 0;
+}
+
+/* Optional dark overlay like homepage */
+.about-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35); /* Adjust to 0.3–0.4 if needed */
+}
+
+.about-hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.about-hero .page-hero-title {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+.about-hero .page-hero-subtitle {
+    font-size: 1.15rem;
+    max-width: 600px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    color: #f0f0f0;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .about-hero {
+        padding: 80px 0;
+    }
+
+    .about-hero .page-hero-title {
+        font-size: 1.8rem;
+    }
+
+    .about-hero .page-hero-subtitle {
+        font-size: 1rem;
+    }
+}
